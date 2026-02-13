@@ -4,7 +4,7 @@ import threading
 from speech_to_text import record_voice, stop_listening_flag
 from llm import get_llm_output
 from tts import edge_speak, stop_speaking
-from ui import JarvisUI
+from ui import DKUI
 
 from actions.open_app import open_app
 from actions.web_search import web_search
@@ -24,7 +24,7 @@ async def get_voice_input():
     return await asyncio.to_thread(record_voice)
 
 
-async def ai_loop(ui: JarvisUI):
+async def ai_loop(ui: DKUI):
     while True:
         stop_listening_flag.clear()
         user_text = await get_voice_input()
@@ -175,7 +175,7 @@ async def ai_loop(ui: JarvisUI):
 
 
 def main():
-    ui = JarvisUI("face.png", size=(900, 900))
+    ui = DKUI("face.png", size=(900, 900))
 
     def runner():
         asyncio.run(ai_loop(ui))

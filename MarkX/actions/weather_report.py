@@ -57,7 +57,7 @@ def _speak_and_log(message: str, player=None):
     """Helper: log + TTS safely"""
     if player:
         try:
-            player.write_log(f"JARVIS: {message}")
+            player.write_log(f"DK: {message}")
         except Exception:
             pass
 

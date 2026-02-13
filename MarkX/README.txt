@@ -1,6 +1,6 @@
-# 🤖 Jarvis Mark X — Local AI Desktop Assistant
+# 🤖 DK Mark X — Local AI Desktop Assistant
 
-Jarvis Mark X is a **local, modular AI desktop assistant** inspired by Jarvis and built from scratch using **Python**.
+DK Mark X is a **local, modular AI desktop assistant** inspired by DK and built from scratch using **Python**.
 
 It allows you to control your computer with voice commands and an intent → action system.
 
@@ -21,7 +21,7 @@ video: https://youtu.be/ZD6kf9w9Sy0?si=DvySsKIeL4RuAjVt
 ## 🔐 Security Notice
 - Runs **100% locally**
 - No remote access by default
-- Jarvis only executes what **YOU code**
+- DK only executes what **YOU code**
 
 ⚠️ Do NOT paste unknown code or give full system control to untrusted scripts.
 
@@ -42,4 +42,4 @@ TikTok: https://www.tiktok.com/@fatihmakes
 
 If you have issues or suggestions, feel free to reach out.
 
-⭐ Like, follow, and subscribe for future Jarvis upgrades!
+⭐ Like, follow, and subscribe for future DK upgrades!

@@ -21,7 +21,12 @@ def load_system_prompt() -> str:
             return f.read()
     except Exception as e:
         print(f"⚠️ prompt.txt cannot installed: {e}")
-        return "You are Jarvis, a helpful AI assistant."
+        return """
+        SYSTEM_IDENTITY: DK.
+        USER: Divyesh.
+        MODE: OFFLINE / EMERGENCY.
+        OUTPUT: STRICT JSON.
+        """
 
 
 SYSTEM_PROMPT = load_system_prompt()
@@ -104,7 +109,7 @@ Known user memory:
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
         "HTTP-Referer": "http://localhost",
-        "X-Title": "Jarvis-Assistant"
+        "X-Title": "DK-Assistant"
     }
 
     try:

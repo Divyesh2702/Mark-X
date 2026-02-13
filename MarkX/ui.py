@@ -7,7 +7,7 @@ from PIL import Image, ImageTk, ImageDraw, ImageFilter
 from tkinter.scrolledtext import ScrolledText
 
 
-class JarvisUI:
+class DKUI:
     def __init__(self, face_path, size=(760, 760)):
         self.root = tk.Tk()
         self.root.title("J.A.R.V.I.S")
